@@ -1,0 +1,15 @@
+print ("Cubic Yard Calculator")
+length = input("What is the length? (ft)")
+if length == "":
+  print("Error! Input a value for length")
+width = input("What is the width? (ft)")
+if width == "":
+  print("Error! Input a value for width")
+depth = input("What is the depth? (ft)")
+if depth == "":
+  print("Error! Input a value for length")
+
+product = float(length)*float(width)*float(depth)
+CY = round(product/27,2)
+
+print ("The Cubic Yardage is:",CY, "CY")
