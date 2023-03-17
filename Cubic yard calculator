@@ -1,15 +1,31 @@
-print ("Cubic Yard Calculator")
+import time
+print ("""
+.   _____       _     _       __   __            _   _____       _            _       _             
+'  /  __ \     | |   (_)      \ \ / /           | | /  __ \     | |          | |     | |            
+'  | /  \/_   _| |__  _  ___   \ V /__ _ _ __ __| | | /  \/ __ _| | ___ _   _| | __ _| |_ ___  _ __ 
+'  | |   | | | | '_ \| |/ __|   \ // _` | '__/ _` | | |    / _` | |/ __| | | | |/ _` | __/ _ \| '__|
+'  | \__/| |_| | |_) | | (__    | | (_| | | | (_| | | \__/| (_| | | (__| |_| | | (_| | || (_) | |   
+'   \____/\__,_|_.__/|_|\___|   \_/\__,_|_|  \__,_|  \____/\__,_|_|\___|\__,_|_|\__,_|\__\___/|_|   
+
+""")
+#Wait for 2 seconds
+time.sleep(2)
 length = input("What is the length? (ft)")
 if length == "":
   print("Error! Input a value for length")
+  time.sleep(1)
+time.sleep(1)
 width = input("What is the width? (ft)")
 if width == "":
   print("Error! Input a value for width")
+  time.sleep(1)
+time.sleep(1)
 depth = input("What is the depth? (ft)")
 if depth == "":
   print("Error! Input a value for length")
+  time.sleep(1)
 
 product = float(length)*float(width)*float(depth)
 CY = round(product/27,2)
-
+time.sleep(1)
 print ("The Cubic Yardage is:",CY, "CY")
